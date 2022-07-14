@@ -1,0 +1,34 @@
+{
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "sculkitems:bleached_black_wool"
+			}
+		},
+		"has_bleach": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"sculkitems:bleach"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_bleach",
+			"has_the_recipe"
+		]
+	],
+	"rewards": {
+		"recipes": [
+			"sculkitems:bleached_black_wool"
+		]
+	}
+}

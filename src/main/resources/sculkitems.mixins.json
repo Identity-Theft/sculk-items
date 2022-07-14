@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "net.identitytheft.sculkitems.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"EndPortalFrameBlockMixin",
+		"EnderEyeItemMixin"
+	],
+	"client": [
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"advancement.bleach.title": "Tasty",
+	"advancement.bleach.description": "Drink bleach",
+
+	"advancement.bleach_no_hunger.title": "Desperate Measures",
+	"advancement.bleach_no_hunger.description": "Drink bleach when your hunger bar is empty",
+
+	"itemGroup.sculkitems.sculk_items": "Sculk Items",
+
+	"block.sculkitems.echo_fire": "Echo Fire",
+	"block.sculkitems.reinforced_sculk": "Reinforced Sculk",
+
+	"item.sculkitems.echo_lighter": "Echo Lighter",
+	"item.sculkitems.echo_lighter.tooltip": "Used to activate the End Portal.",
+
+	"item.sculkitems.bleach": "Bleach",
+	"item.sculkitems.empty_jug": "Empty Jug",
+	"item.sculkitems.water_jug": "Water Jug",
+
+	"death.attack.drank_bleach": "%1$s drank bleach",
+	"death.attack.drank_bleach_no_hunger": "%1$s died due to lack of pepsi"
+}
