@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "Sculk Items",
-  "description": "Adds items crafted using items found in Anicient Cities (and Bleach).",
+  "description": "Adds items crafted using materials found in Ancient Cities.",
   "authors": [
     "Identity Theft"
   ],

@@ -14,6 +14,6 @@ public class ModSounds {
 	}
 
 	public static void registerSounds() {
-		SculkItems.LOGGER.info("Registering Sounds");
+		SculkItems.LOGGER.info("Registering Sounds for " + SculkItems.MOD_ID);
 	}
 }

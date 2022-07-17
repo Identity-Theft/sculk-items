@@ -13,28 +13,26 @@ import net.minecraft.util.registry.Registry;
 public class ModItems {
 
 	//region Blocks
-//    public static final Item ECHO_FIRE = registerBlockItem("echo_fire", ModBlocks.ECHO_FIRE, ModItemGroups.SCULK_ITEMS);
-	public static final Item REINFORCED_SCULK = registerBlockItem("reinforced_sculk", ModBlocks.REINFORCED_SCULK, ModItemGroups.SCULK_ITEMS);
+	 public static final Item REINFORCED_SCULK = registerBlockItem("reinforced_sculk", ModBlocks.REINFORCED_SCULK, ModItemGroups.SCULK_ITEMS);
 	//endregion
 
 	//region Items
-	public static final Item SCULK_LIGHTER = registerItem("echo_lighter", new SculkLighterItem(new FabricItemSettings()
+	public static final Item SCULK_LIGHTER = registerItem("echo_lighter", new EchoLighterItem(new FabricItemSettings()
 		.maxDamage(64)
 		.group(ModItemGroups.SCULK_ITEMS)));
 
 	public static final Item EMPTY_JUG = registerItem("empty_jug", new EmptyJugItem(new FabricItemSettings()
 		.group(ModItemGroups.SCULK_ITEMS)));
-
 	public static final Item WATER_JUG = registerItem("water_jug", new WaterJugItem(new FabricItemSettings()
 		.maxCount(1)
 		.group(ModItemGroups.SCULK_ITEMS)));
-
 	public static final Item BLEACH = registerItem("bleach", new BleachItem(new FabricItemSettings()
 		.food(ModFoodComponents.BLEACH)
 		.maxCount(1)
 		.recipeRemainder(EMPTY_JUG)
 		.group(ModItemGroups.SCULK_ITEMS)));
 	//endregion
+
 
 	private static Item registerItem(String name, Item item) {
 		return Registry.register(Registry.ITEM, new Identifier(SculkItems.MOD_ID, name), item);
@@ -46,6 +44,6 @@ public class ModItems {
 	}
 
 	public static void registerItems() {
-		SculkItems.LOGGER.info("RegisterItems");
+		SculkItems.LOGGER.info("Registering Items for " + SculkItems.MOD_ID);
 	}
 }

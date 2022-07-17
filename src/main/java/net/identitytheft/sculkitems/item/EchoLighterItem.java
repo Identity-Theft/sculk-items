@@ -21,9 +21,9 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class SculkLighterItem extends Item {
+public class EchoLighterItem extends Item {
 
-	public SculkLighterItem(Settings settings) {
+	public EchoLighterItem(Settings settings) {
 		super(settings);
 	}
 

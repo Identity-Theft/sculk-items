@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "bleached_carpet",
+  "ingredients": [
+    {
+      "item": "minecraft:blue_carpet"
+    },
+    {
+      "item": "sculkitems:bleach"
+    }
+  ],
+  "result": {
+    "item": "minecraft:white_carpet"
+  }
+}

@@ -31,6 +31,6 @@ public class ModBlocks {
 	}
 
 	public static void registerBlocks() {
-		SculkItems.LOGGER.info("Registering Blocks");
+		SculkItems.LOGGER.info("Registering Blocks for " + SculkItems.MOD_ID);
 	}
 }

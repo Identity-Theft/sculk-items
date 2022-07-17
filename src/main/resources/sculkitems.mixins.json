@@ -5,7 +5,10 @@
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
 		"EndPortalFrameBlockMixin",
-		"EnderEyeItemMixin"
+		"EnderEyeItemMixin",
+		"VibrationListenerMixin",
+		"SculkSensorBlockMixin",
+		"SculkShriekerMixin"
 	],
 	"client": [
 	],

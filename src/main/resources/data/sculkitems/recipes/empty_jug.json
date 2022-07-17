@@ -3,15 +3,18 @@
   "key": {
     "#": {
       "item": "minecraft:glass"
+    },
+    "E": {
+      "item": "minecraft:echo_shard"
     }
   },
   "pattern": [
-    "## ",
+    "E##",
     "# #",
     "###"
   ],
   "result": {
-    "count": 3,
+    "count": 2,
     "item": "sculkitems:empty_jug"
   }
 }

@@ -1,7 +1,7 @@
 package net.identitytheft.sculkitems.mixin;
 
 import net.identitytheft.sculkitems.block.ModBlocks;
-import net.identitytheft.sculkitems.util.Util;
+import net.identitytheft.sculkitems.util.SculkItemsUtil;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -30,7 +30,7 @@ public abstract class EnderEyeItemMixin {
 		BlockState blockState = world.getBlockState(blockPos);
 
 		if (blockState.isOf(Blocks.END_PORTAL_FRAME)) {
-			BlockPattern.Result result = Util.canSpawnEndFrameSculk(EndPortalFrameBlock.EYE, EndPortalFrameBlock.FACING).searchAround(world, blockPos);
+			BlockPattern.Result result = SculkItemsUtil.canSpawnEndFrameSculk(EndPortalFrameBlock.EYE, EndPortalFrameBlock.FACING).searchAround(world, blockPos);
 
 			if (result != null) {
 				BlockPos sculkPos = result.getFrontTopLeft().add(-2,-1,-2);
