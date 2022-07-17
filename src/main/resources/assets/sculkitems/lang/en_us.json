@@ -17,11 +17,6 @@
 	"item.sculkitems.empty_jug": "Empty Jug",
 	"item.sculkitems.water_jug": "Water Jug",
 
-	"item.sculkitems.echo_helmet": "Echo Helmet",
-	"item.sculkitems.echo_chestplate": "Echo Chestplate",
-	"item.sculkitems.echo_leggings": "Echo Leggings",
-	"item.sculkitems.echo_boots": "Echo Boots",
-
 	"enchantment.sculkitems.occlusion": "Occlusion",
 	"enchantment.sculkitems.occlusion.desc": "Cancels out most vibrations caused by the player.",
 
