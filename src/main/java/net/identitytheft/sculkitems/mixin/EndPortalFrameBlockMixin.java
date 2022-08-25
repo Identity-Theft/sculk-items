@@ -1,6 +1,7 @@
 package net.identitytheft.sculkitems.mixin;
 
 import com.google.common.base.Predicates;
+import net.identitytheft.sculkitems.SculkItems;
 import net.identitytheft.sculkitems.block.ModBlocks;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.EndPortalFrameBlock;
@@ -29,7 +30,7 @@ public abstract class EndPortalFrameBlockMixin {
 
 	@Inject(method = "getCompletedFramePattern", at = @At("HEAD"))
 	private static void getCompletedPatternFrame(CallbackInfoReturnable<BlockPattern> cir) {
-		if (COMPLETED_FRAME == null) {
+		if (SculkItems.CONFIG.requireSculkLighter && COMPLETED_FRAME == null) {
 			COMPLETED_FRAME = BlockPatternBuilder.start().aisle("?vvv?", ">???<", ">?*?<", ">???<", "?^^^?")
 				.where('?', CachedBlockPosition.matchesBlockState(BlockStatePredicate.ANY))
 				.where('^', CachedBlockPosition.matchesBlockState(BlockStatePredicate.forBlock(Blocks.END_PORTAL_FRAME)

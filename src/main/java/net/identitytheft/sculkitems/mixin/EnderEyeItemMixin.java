@@ -1,5 +1,6 @@
 package net.identitytheft.sculkitems.mixin;
 
+import net.identitytheft.sculkitems.SculkItems;
 import net.identitytheft.sculkitems.block.ModBlocks;
 import net.identitytheft.sculkitems.util.SculkItemsUtil;
 import net.minecraft.block.Block;
@@ -25,33 +26,35 @@ public abstract class EnderEyeItemMixin {
 
 	@Inject(method = "useOnBlock", at = @At("TAIL"))
 	public void useOnBlock(ItemUsageContext context, CallbackInfoReturnable<ActionResult> cir) {
-		BlockPos blockPos = context.getBlockPos();
-		World world = context.getWorld();
-		BlockState blockState = world.getBlockState(blockPos);
+		if (SculkItems.CONFIG.requireSculkLighter) {
+			BlockPos blockPos = context.getBlockPos();
+			World world = context.getWorld();
+			BlockState blockState = world.getBlockState(blockPos);
 
-		if (blockState.isOf(Blocks.END_PORTAL_FRAME)) {
-			BlockPattern.Result result = SculkItemsUtil.canSpawnEndFrameSculk(EndPortalFrameBlock.EYE, EndPortalFrameBlock.FACING).searchAround(world, blockPos);
+			if (blockState.isOf(Blocks.END_PORTAL_FRAME)) {
+				BlockPattern.Result result = SculkItemsUtil.canSpawnEndFrameSculk(EndPortalFrameBlock.EYE, EndPortalFrameBlock.FACING).searchAround(world, blockPos);
 
-			if (result != null) {
-				BlockPos sculkPos = result.getFrontTopLeft().add(-2,-1,-2);
-				BlockState sculkState = ModBlocks.REINFORCED_SCULK.getDefaultState();
-				BlockState beforeSculk = world.getBlockState(sculkPos);
+				if (result != null) {
+					BlockPos sculkPos = result.getFrontTopLeft().add(-2, -1, -2);
+					BlockState sculkState = ModBlocks.REINFORCED_SCULK.getDefaultState();
+					BlockState beforeSculk = world.getBlockState(sculkPos);
 
-				Block.pushEntitiesUpBeforeBlockChange(beforeSculk, sculkState, world, sculkPos);
-				world.setBlockState(sculkPos, sculkState, Block.NOTIFY_ALL | Block.REDRAW_ON_MAIN_THREAD);
+					Block.pushEntitiesUpBeforeBlockChange(beforeSculk, sculkState, world, sculkPos);
+					world.setBlockState(sculkPos, sculkState, Block.NOTIFY_ALL | Block.REDRAW_ON_MAIN_THREAD);
 
-				double d;
-				double e;
-				double f;
+					double d;
+					double e;
+					double f;
 
-				ServerWorld serverWorld = (ServerWorld) world;
-				Random random = Random.create();
+					ServerWorld serverWorld = (ServerWorld) world;
+					Random random = Random.create();
 
-				for (int i = 0; i < 20; ++i) {
-					d = (double)sculkPos.getX() + random.nextDouble();
-					e = (double)(sculkPos.getY() + 1) - random.nextDouble() * (double)0.1f;
-					f = (double)sculkPos.getZ() + random.nextDouble();
-					serverWorld.spawnParticles(ParticleTypes.FLAME, d, e, f, 1, 0, 0, 0, 1);
+					for (int i = 0; i < 20; ++i) {
+						d = (double) sculkPos.getX() + random.nextDouble();
+						e = (double) (sculkPos.getY() + 1) - random.nextDouble() * (double) 0.1f;
+						f = (double) sculkPos.getZ() + random.nextDouble();
+						serverWorld.spawnParticles(ParticleTypes.FLAME, d, e, f, 1, 0, 0, 0, 1);
+					}
 				}
 			}
 		}

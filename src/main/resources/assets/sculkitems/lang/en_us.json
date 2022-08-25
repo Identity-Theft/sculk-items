@@ -17,9 +17,26 @@
 	"item.sculkitems.empty_jug": "Empty Jug",
 	"item.sculkitems.water_jug": "Water Jug",
 
+	"item.minecraft.potion.effect.spelunking_potion": "Spelunking Potion",
+	"item.minecraft.splash_potion.effect.spelunking_potion": "Splash Potion of Spelunking",
+	"item.minecraft.lingering_potion.effect.spelunking_potion": "Lingering Potion of Spelunking",
+
 	"enchantment.sculkitems.occlusion": "Occlusion",
 	"enchantment.sculkitems.occlusion.desc": "Cancels out most vibrations caused by the player.",
 
+	"effect.sculkitems.spelunker": "Spelunker",
+
 	"death.attack.drank_bleach": "%1$s drank bleach",
-	"death.attack.drank_bleach_no_hunger": "%1$s died due to lack of pepsi"
+	"death.attack.drank_bleach_no_hunger": "%1$s died due to lack of pepsi",
+
+	"text.autoconfig.sculkitems.title": "Sculk Items Config",
+
+	"text.autoconfig.sculkitems.option.requireSculkLighter": "Require Sculk Lighter",
+	"text.autoconfig.sculkitems.option.requireSculkLighter.@Tooltip": "Whether or not the Sculk Lighter is required to light the End Portal",
+
+	"text.autoconfig.sculkitems.option.spawnOcclusion": "Spawn Occlusion Enchantment",
+	"text.autoconfig.sculkitems.option.spawnOcclusion.@Tooltip": "Whether or not the Occlusion Enchantment will spawn in Ancient City chests",
+
+	"text.autoconfig.sculkitems.option.playerStepDetector": "Player Step Detector",
+	"text.autoconfig.sculkitems.option.playerStepDetector.@Tooltip": "Whether or not Sculk Sensors will only detect player footsteps if a Note Block is under it"
 }
