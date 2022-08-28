@@ -20,17 +20,6 @@ public class ModItems {
 	public static final Item SCULK_LIGHTER = registerItem("echo_lighter", new EchoLighterItem(new FabricItemSettings()
 		.maxDamage(64)
 		.group(ModItemGroups.SCULK_ITEMS)));
-
-	public static final Item EMPTY_JUG = registerItem("empty_jug", new EmptyJugItem(new FabricItemSettings()
-		.group(ModItemGroups.SCULK_ITEMS)));
-	public static final Item WATER_JUG = registerItem("water_jug", new WaterJugItem(new FabricItemSettings()
-		.maxCount(1)
-		.group(ModItemGroups.SCULK_ITEMS)));
-	public static final Item BLEACH = registerItem("bleach", new BleachItem(new FabricItemSettings()
-		.food(ModFoodComponents.BLEACH)
-		.maxCount(1)
-		.recipeRemainder(EMPTY_JUG)
-		.group(ModItemGroups.SCULK_ITEMS)));
 	//endregion
 
 

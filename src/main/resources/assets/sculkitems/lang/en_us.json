@@ -1,10 +1,4 @@
 {
-	"advancement.bleach.title": "Tasty",
-	"advancement.bleach.description": "Drink bleach",
-
-	"advancement.bleach_no_hunger.title": "Desperate Measures",
-	"advancement.bleach_no_hunger.description": "Drink bleach when your hunger bar is empty",
-
 	"itemGroup.sculkitems.sculk_items": "Sculk Items",
 
 	"block.sculkitems.echo_fire": "Echo Fire",
@@ -13,21 +7,8 @@
 	"item.sculkitems.echo_lighter": "Echo Lighter",
 	"item.sculkitems.echo_lighter.tooltip": "Used to activate the End Portal.",
 
-	"item.sculkitems.bleach": "Bleach",
-	"item.sculkitems.empty_jug": "Empty Jug",
-	"item.sculkitems.water_jug": "Water Jug",
-
-	"item.minecraft.potion.effect.spelunking_potion": "Spelunking Potion",
-	"item.minecraft.splash_potion.effect.spelunking_potion": "Splash Potion of Spelunking",
-	"item.minecraft.lingering_potion.effect.spelunking_potion": "Lingering Potion of Spelunking",
-
 	"enchantment.sculkitems.occlusion": "Occlusion",
 	"enchantment.sculkitems.occlusion.desc": "Cancels out most vibrations caused by the player.",
-
-	"effect.sculkitems.spelunker": "Spelunker",
-
-	"death.attack.drank_bleach": "%1$s drank bleach",
-	"death.attack.drank_bleach_no_hunger": "%1$s died due to lack of pepsi",
 
 	"text.autoconfig.sculkitems.title": "Sculk Items Config",
 
