@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "sculkitems",
+  "id": "sculk_items",
   "version": "${version}",
 
   "name": "Sculk Items",
-  "description": "Adds items crafted using materials found in Ancient Cities.",
+  "description": "Adds more items to Ancient Cities to make them worth exploring",
   "authors": [
     "Identity Theft"
   ],
@@ -23,9 +23,6 @@
     ],
     "client": [
       "net.identitytheft.sculkitems.SculkItemsClient"
-    ],
-    "modmenu": [
-      "net.identitytheft.sculkitems.integration.ModMenuIntegration"
     ]
   },
   "mixins": [
@@ -38,7 +35,9 @@
     "minecraft": "~1.19",
     "java": ">=17"
   },
-  "suggests": {
-    "another-mod": "*"
+  "custom": {
+    "catalogue": {
+      "configFactory": "net.identitytheft.sculkitems.integration.CatalogueIntegration"
+    }
   }
 }
