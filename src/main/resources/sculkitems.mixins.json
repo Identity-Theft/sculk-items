@@ -6,10 +6,10 @@
 	"mixins": [
 		"EndPortalFrameBlockMixin",
 		"EnderEyeItemMixin",
-		"VibrationListenerMixin",
 		"SculkSensorBlockMixin",
-		"SculkSensorBlockEntityMixin",
-		"SculkShriekerMixin"
+		"VibrationsCallback",
+		"SculkShriekerMixin",
+		"EntityMixin"
 	],
 	"client": [
 	],

@@ -2,7 +2,6 @@ package net.identitytheft.sculkitems.enchantment;
 
 import net.identitytheft.sculkitems.SculkItems;
 import net.minecraft.enchantment.Enchantment;
-import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -18,6 +17,6 @@ public class ModEnchantments {
 	public static void registerEnchantments() {
 		SculkItems.LOGGER.info("Registering Enchantments for " + SculkItems.MOD_ID);
 
-		OCCLUSION = register("occlusion", new OcclusionEnchantment(Enchantment.Rarity.RARE, EnchantmentTarget.ARMOR_CHEST, EquipmentSlot.CHEST));
+		OCCLUSION = register("occlusion", new OcclusionEnchantment(Enchantment.Rarity.RARE, EquipmentSlot.CHEST));
 	}
 }

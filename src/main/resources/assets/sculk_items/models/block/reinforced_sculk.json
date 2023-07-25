@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "sculk_items:block/reinforced_sculk_bottom",
+    "side": "sculk_items:block/reinforced_sculk_side",
+    "top": "sculk_items:block/reinforced_sculk_top"
+  }
+}

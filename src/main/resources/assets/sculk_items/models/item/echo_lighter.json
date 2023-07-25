@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "sculkitems:item/echo_lighter"
+    "layer0": "sculk_items:item/echo_lighter"
   }
 }

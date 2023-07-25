@@ -1,0 +1,23 @@
+{
+	"itemGroup.sculk_items.sculk_items": "Sculk Items",
+
+	"block.sculk_items.echo_fire": "Echo Fire",
+	"block.sculk_items.reinforced_sculk": "Reinforced Sculk",
+
+	"item.sculk_items.echo_lighter": "Echo Lighter",
+	"item.sculk_items.echo_lighter.tooltip": "Used to activate the End Portal.",
+
+	"enchantment.sculk_items.occlusion": "Occlusion",
+	"enchantment.sculk_items.occlusion.desc": "Cancels out most vibrations caused by the wearer.",
+
+	"text.autoconfig.sculk_items.title": "Sculk Items Config",
+
+	"text.autoconfig.sculk_items.option.requireSculkLighter": "Require Sculk Lighter",
+	"text.autoconfig.sculk_items.option.requireSculkLighter.@Tooltip": "Whether or not the Sculk Lighter is required to light the End Portal",
+
+	"text.autoconfig.sculk_items.option.spawnOcclusion": "Spawn Occlusion Enchantment",
+	"text.autoconfig.sculk_items.option.spawnOcclusion.@Tooltip": "Whether or not the Occlusion Enchantment will spawn in Ancient City chests",
+
+	"text.autoconfig.sculk_items.option.playerStepDetector": "Enable Player Step Detector",
+	"text.autoconfig.sculk_items.option.playerStepDetector.@Tooltip": "Whether or not Sculk Sensors will only detect player footsteps if a Note Block is under it"
+}

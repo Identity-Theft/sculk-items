@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/template_fire_side",
   "textures": {
-    "fire": "sculkitems:block/echo_fire_1"
+    "fire": "sculk_items:block/echo_fire_0"
   }
 }

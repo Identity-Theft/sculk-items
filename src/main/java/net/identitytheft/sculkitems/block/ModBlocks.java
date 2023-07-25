@@ -20,7 +20,7 @@ public class ModBlocks {
 		SculkItems.LOGGER.info("Registering Blocks for " + SculkItems.MOD_ID);
 
 		ECHO_FIRE = register("echo_fire", new EchoFireBlock(
-			FabricBlockSettings.of(Material.FIRE)
+			FabricBlockSettings.copyOf(Blocks.FIRE)
 				.noCollision()
 				.breakInstantly()
 				.luminance(state -> 15)
@@ -30,7 +30,7 @@ public class ModBlocks {
 		);
 
 		REINFORCED_SCULK = register("reinforced_sculk", new Block(
-			FabricBlockSettings.of(Material.SCULK)
+			FabricBlockSettings.copyOf(Blocks.SCULK)
 				.strength(-1.0f, 3600000.0f)
 				.dropsNothing()
 				.sounds(BlockSoundGroup.SCULK)

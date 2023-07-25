@@ -29,7 +29,7 @@ public class EchoLighterItem extends Item {
 
 	@Override
 	public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-		tooltip.add(Text.translatable("item.sculkitems.echo_lighter.tooltip").formatted(Formatting.AQUA));
+		tooltip.add(Text.translatable("item.sculk_items.echo_lighter.tooltip").formatted(Formatting.AQUA));
 	}
 
 	@Override

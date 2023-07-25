@@ -3,7 +3,6 @@ package net.identitytheft.sculkitems.util;
 import com.google.common.base.Predicates;
 import net.identitytheft.sculkitems.enchantment.ModEnchantments;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.pattern.BlockPattern;
 import net.minecraft.block.pattern.BlockPatternBuilder;
 import net.minecraft.block.pattern.CachedBlockPosition;
@@ -14,7 +13,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.predicate.block.BlockStatePredicate;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.DirectionProperty;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 
 public class SculkItemsUtil {
@@ -43,20 +41,12 @@ public class SculkItemsUtil {
 	}
 
 	public static int occlusionLevel(LivingEntity livingEntity) {
-		ItemStack legSlot = livingEntity.getEquippedStack(EquipmentSlot.CHEST);
+		ItemStack equippedStack = livingEntity.getEquippedStack(EquipmentSlot.CHEST);
 
-		if (legSlot.isEmpty()) {
+		if (equippedStack.isEmpty()) {
 			return 0;
 		}
 
-		if (EnchantmentHelper.getLevel(ModEnchantments.OCCLUSION, legSlot) == 0) {
-			return 0;
-		}
-
-		return EnchantmentHelper.getLevel(ModEnchantments.OCCLUSION, legSlot);
-	}
-
-	public static BlockPos getBlockEntityPosition(BlockEntity blockEntity) {
-		return blockEntity.getPos();
+		return EnchantmentHelper.getLevel(ModEnchantments.OCCLUSION, equippedStack);
 	}
 }
